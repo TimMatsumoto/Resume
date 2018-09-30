@@ -1,0 +1,15 @@
+.vscode/*
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.code/__pycache__
+.vscode/settings.json
+main.aux
+main.bbl
+main.blg
+main.log
+main.out
+main.pdf
+main.synctex.gz
+main.synctex
