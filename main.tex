@@ -1,12 +1,10 @@
 
-
-
-\documentclass[12pt,a4paper,sans]{moderncv}  
+\documentclass[11pt,a4paper,sans]{moderncv}  
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                                % color o
 
 % adjust the page margins
-\usepackage[scale=0.90]{geometry}
+\usepackage[scale=0.90, top=10mm]{geometry}
 
 \usepackage{import}
 
@@ -15,82 +13,217 @@
 
 \email{t.matsumoto@alumni.ubc.ca}                               % optional, remove / comment the line if not wanted
 \homepage{github.com/TimMatsumoto}    
+% \homepage{www.linkedin.com/in/tetsuya-tim-matsumoto-4a0b32122}    
 
 
 \begin{document}
 
 \makecvtitle
+\vspace*{-10mm}
 
 \section{Education}
 
 
-\cventry{September 2016--Ongoing}{Bachelor of Science, Honours Mathematics with minor in Computer Science}
-{University of British Columbia}{}{}{\vspace{3pt} Expected May 2020 | Vancouver, B.C, Canada | Major GPA 3.90/4.33}
+    \cventry    
+        {September 2016 - Ongoing}
+        {Bachelor of Science, Honours in Mathematics with minor in Computer Science}
+        {University of British Columbia}    
+        {}{}
+        {\vspace{3pt} Expected May 2020 | Vancouver, B.C, Canada | Major GPA 3.90/4.33}
 
-\vspace{6pt}
+    \vspace{6pt}
 
-\cventry{August 2015--January 2017}{Student of Mathematics}
-{Stanford Pre-Collegiate University-Level Online Math \& Physics}{}{}{}
-
-
-
-\section{Technical and Personal skills}
-
-\vspace{3pt}
-
-\cvitem{\textbf{Programming Languages}}{Java, Python, C++, C\#, TeX, XML }   
+    \cventry
+        {August 2015 - January 2017} 
+        {Student of Mathematics}
+        {Stanford Pre-Collegiate University-Level Online Math \& Physics}   
+        {}{}{}
 
 
-\cvitem{\textbf{Industry Software Skills}} {Git, OpenGL, Unity, IDE tools and libraries.}
+
+\section{Skills}
+
+
+    \cvitem{
+        \textbf{Programming Languages}}
+            {Python, C++, Matlab, Java, C\#, TeX, XML }   
+
+
+    \cvitem{
+        \textbf{Industry Skills}} 
+            {Git, OpenGL, Unity, IDE tools and libraries.}
+
+    \cvitem{
+        \textbf{Academic Knowledge}} 
+            {Machine Learning/Deep Learning, 3D graphics, Linear Algebra, 
+            Numerical Operations, Differential Equation, Differential Geometry}
 
 
 \section{Projects}
 
-\vspace{5pt}
 
-%\subsection{Academic Qualifications}
-
-\vspace{5pt}
+    \vspace{5pt}
 
 
-\cventry{Ongoing}{Unity/C\#}{Unity Project}{}{}{A 3D game }
+    \cventry
+        % Current Status
+        {August 2018 - Ongoing} 
+        % Language/Library
+        {C\#}
+        % Name
+        {4D SLASH}
+        % Category
+        {Unity3D}
+        % Tools/Environment
+        {Unity/Visual Studio}
+        % Description
+        \hline
+        {  
+            A 3D game in Unity3D. A player moves along a predefined trajectory in 3D space
+        avoiding obstacles on the way. The player also has a blade to slay and cut 
+        the obstacles. Some obstacles are thrown targeted at the player, and the player 
+        cuts the obstacle to avoid crashing. There are also objects from which the player 
+        gets some kind of rewards. As extra features, I may add more assets to play with 
+        such as guns, beams Japanese sword and so on. 
+        The trajectories will be implemented in C++ and combined into C\# file.
+        }
+
+    \noindent\rule{\textwidth}{0.1pt}
+        
+        \vspace{3pt}
+
+    % \cventry
+    %     % Current Status
+    %     {August 2018}
+    %     % Language/Library
+    %     {Java/XML}
+    %     % Name
+    %     {AutoCutBlue}
+    %     % Category
+    %     {Android Application} 
+    %     % Tools/Environment
+    %     {IntelliJ/Android Studio}
+    %     % Description
+    %     \hline
+    %     {
+    %         A Bluetooth app that sets timer to disconnect devices and save battery.
+    %     This android app disconnects Bluetooth connection after certain amount of time 
+    %     set by the user. It prevents draining battery by playing music when the user
+    %     is not actually listening.
+    %     }
 
 
-\vspace{6pt}
+    % \noindent\rule{\textwidth}{0.1pt}
 
-\cventry{August 2018}{Java/XML}{Android Bluetooth App}{}{IntelliJ/Android Studio}{A Bluetooth app that sets timer to disconnect devices and save battery.}
-% arguments 3 to 6 can be left empty
+    % \vspace{6pt}
+
+    \cventry    
+        % Current Status
+        {August 2018}
+        % Language/Library
+        {Python/keras}
+        % Name
+        {Stock Price Prediction}
+        % Category
+        {Deep Learning}
+        % Tools/Environment
+        {}
+        % Description
+        \hline
+        {
+            Predict Google stock price for next 60 business days from past data using
+        RNN with keras library. Construct a data structure from data set from Google homepage into a csv file 
+        where $k_{th}$ row represents the stock prices from the day to 20 days prior 
+        to the day. Then, Recurrent Neural Network (RNN) is applied to learn the data set,
+        and the result is plotted with the actual changes in the stock price for comparison.
+        This is implemented in Python using Keras library.
+        }
+
+        \noindent\rule{\textwidth}{0.1pt}
+
+    \vspace{3pt}
+
+    \cventry
+        % Current Status
+        {August 2018}
+        % Language/Library
+        {Python/Pytorch}
+        % Name
+        {Movie Recommendation}
+        % Category
+        {Deep Learning}
+        % Tools/Environment
+        {}
+        % Description
+        \hline
+        {
+            A movie recommendation system using Restricted Boltzmann Machine (RBM) with Pytorch library. 
+        Algorithm 2 from "An Introduction to Restricted Boltzmann Machines" by A. Fischer and C. Igel 
+        is implemented using Pytorch library. Although RBM is a unsupervised learning algorithm, 
+        the data set was divided into training set and test set to test the RBM classifier. 
+        The final result was approximately 75 \% in accuracy.
+        
+        }
 
 
-\vspace{6pt}
+%     \vspace{5pt}
 
-\cventry{August 2018}{Python/keras}{Prediction of Future Stock Price Using RNN}{}{}{Predict Google stock price for next 60 business days from past data using RNN with keras library.}
+% \section{Academic Projects}
 
-\vspace{6pt}
+\noindent\rule{\textwidth}{0.1pt}
 
-\cventry{August 2018}{Python/Pytorch}{Movie recommendation system using Boltzmann Machine}{}{}{From collected data, construct a movie recommendation system using Restricted Boltzmann Machine with Pytorch library.}
+    \vspace{3pt}
+           
+        \cventry
+            % Current Status
+            {May - June 2018}
+            % Language/Library
+            {C++}   
+            % Name
+            {Blurring Tree}
+            % Category
+            {Algorithms and Data Structures}
+            % Tools/Environment
+            {}
+            % Description
+            \hline
+            {
+                A tree is constructed from an image to blur. In prior to tree construction, 
+                for every pixel, the average and variance of RGB colours in the rectangle 
+                where the upper left corner is (0,0) of the image and lower right corner 
+                is the pixel. Then, The tree splits either horizontally or vertically based 
+                on the statistics. This process continues until the leaf node corresponds to 
+                each pixel. By pruning this tree, we get a pruned image.
+            }
+
+        % \noindent\rule{\textwidth}{0.1pt}
+
+        % \vspace{6pt}
+
+        % \cventry
+        %     % Current Status
+        %     {September - December 2017}
+        %     % Language/Library
+        %     {Java}
+        %     % Name
+        %     {Bus R Us}
+        %     % Category
+        %     { Software Construction}
+        %     % Tools/Environment
+        %     {JSON/Translink Open API}
+        %     % Description
+        %     \hline
+        %     {
+        %         A real time bus application on android devices. 
+        %     This application maps the location of stops, buses and bus routes on the 
+        %     Greater Vancouver Transit system (Translink). It retrieves real time arrival 
+        %     information at each stops. The obtained JSON files which contain bus stop 
+        %     information and bus route information are parsed and stored in a hash table.
+        %     Bus routes and icons for bus stops and vehicles are rendered on the map. 
+        %     }
 
 
-
-\vspace{5pt}
-
-\section{Academic Projects}
-
-
-    
-\cventry{May - June 2018}{C++}{Image Processing}{Algorithms and Data Structures}{}{Construct a tree out of an image to blur}
-
-
-\vspace{6pt}
-\cventry{September - December 2017}{Java}{Bus R Us}{ Software Construction}{JSON/Translink Open API}{This application maps the location of stops, buses and bus routes on the Greater Vancouver Transit system (Translink) and retrieves real time arrival information at those stops.}
-
-
-
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}      
 
 \end{document}
 
 
-%% end of file `template.tex'.
